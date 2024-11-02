@@ -7,46 +7,30 @@
     <title>Document</title>
     <style>
         h1 {
-            color:darksalmon;
+            color:rgb(202, 130, 105);
         }
 
         h2 {
             color:brown;
         }
-
-        p {
-            color: darksalmon;
-            text-align: center;
-            text_decoration: bold;
-        }
     
-
         * {
-            margin:0px;
-            padding:0px;
-            box-sizing: border-box;
+            margin: 0px;
+            padding: 3px;
+            box-sizing:border-box;
         }
 
-        p{
+        /* p{
             background-color: grey;
             outline: solid red 5px;
-        }
+        } */
         
         .container{
             display: flex;
             flex-direction: column;
             min-height: 400px;
-            /* background-color: grey; */
+            background-color:rgb(208, 111, 169);
             width: 100%;
-        }
-
-        .logo {
-            display: flex;
-            flex-direction: row;
-            min-height: 100px;
-            width: 100%;
-            background-color: aqua;
-            position: relative;
         }
 
         .logo img {
@@ -57,75 +41,68 @@
 
         .navigation {
             display: flex;
-            flex-direction: row;
-            min-height: 20px;
+            flex-direction:row;
+            min-height: 5px;
             width: 100%;
-            background-color: rgb(175, 255, 255);
-            margin-top: 10px;
-            justify-content: space-between;
+            background-color:rgb(252, 9, 159);
+            margin:0px;
+            justify-content:space-evenly;
         }
 
         .navigation a {
-
-            text-decoration: none; 
+            text-decoration:solid; 
             color: inherit;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-weight: bold;
-            font-size: 20px;
+            font-size: 25px;
         }
 
         .content{
 
             display: flex;
-            flex-direction: row;
-            min-height: 300px;
-            width: 100%;
-            /* background-color: red; */
-            margin-top: 10px;
-            justify-content: space-between;
-        }
-
-        .side-bar{
-
-            display: flex;
             flex-direction: column;
-            background-color: rgb(175, 255, 255);
-            flex-basis: 20%;
-        }
+            max-height: 1000px;
+            width: 100%;
+            background-color:lightpink;
+            justify-content:space-between;
 
-        .side-bar a{
+    
+        .content a{
 
             text-decoration: none; 
             color: inherit;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-weight: bold;
             font-size: 20px;
             margin-top: 10px;
 
-        }
+        } 
 
-
+/* 
         .body-area{
 
             display: flex;
             flex-direction: column;
-            /* background-color: lightsalmon; */
-            flex-basis: 75%;
+            background-color: lightsalmon;
+            flex-basis: 60%;
 
-        }
+        } */
 
         .footer{
             display: flex;
             flex-direction: row;
             min-height: 30px;
-            width: 100%;
-            /* background-color: lightsalmon; */
+            width: 100%; 
             margin-top: 10px;
             justify-content: center;
         }
 
-        body {
+        /* body {
 
+            background-color: beige;
+        } */
+
+        header {
             background-color: beige;
         }
 
@@ -137,127 +114,112 @@
     
     <div class="container">
         <div class="logo">
-            <img src="C:\Users\user\Downloads\WhatsApp Image 2024-10-27 at 1.07.18 PM.jpeg" alt="">
+            <img src="C:\Users\user\Documents\webdev_lab_2\WhatsApp Image 2024-10-27 at 1.07.18 PM.jpeg" alt="">
         </div>
 
         <div class="navigation">
-            <a href="">Google</a> |
-            <a href="">UTHM</a> |
-            <a href="">Author</a> |
-            <a href="">LinkedIn</a>
+            <a href="file:///C:/Users/user/Documents/webdev_lab_2/biodata.html">PROFILE</a> |
+            <a href="https://www.instagram.com/p/C7gYIjqvS3HI4ax6IM6BeqNWjQwXAkznYbLu2o0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">EXPERIENCE</a> |
+            <a href="https://www.instagram.com/?hl=en">INSTAGRAM</a> |
+            <a href="https://www.tiktok.com/@s_0_c_k_s?_t=8r4HitdT0vH&_r=1">TIKTOK</a>
         </div>
 
         <div class="content">
             <div class="side-bar">
-                <a href="">About Me</a>
-                <hr>
-                <a href="">My Skills</a>
-                <hr>
-                <a href="">My Pictures</a>
-            </div>
-            <div class="body-area">
-                <img src="photo.jpg" alt="" width="400px">
-                <ul>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                </ul>
-                <p style="font-style: italic; font-family: Georgia, 'Times New Roman', Times, serif;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora ex ab neque, alias, facilis, eaque magnam quod itaque adipisci autem laboriosam sit cupiditate? Quos libero repellendus tenetur perferendis, dolorem veritatis rem cupiditate beatae. Est eos perferendis atque voluptas doloremque illum esse dolorem dicta. Commodi a voluptatem fugit similique consequatur quis?</p>
-
+                <table border="1" style="width: 100%">
+                    <tr>
+                        <td><b>Name</b></td>
+                        <td>
+                            <center>Hana Mumtaz</center>
+                        </td>
+                        <td rowspan="4"><center>Photo<br><img src="C:\Users\user\Downloads\WhatsApp Image 2024-10-07 at 2.19.19 PM.jpeg" alt="My Photo" width="200px"></center></td>
+            
+                    <tr>
+                        <td><b>Date of Birth</td>
+                        <td>12/5/2003</td>
+                    </tr>
+            
+                    <tr>
+                        <td><b>Religion</td>
+                        <td>Islam</td>
+                    </tr>
+            
+                    <tr>
+                        <td><b>Race</td>
+                        <td>Bugis</td>
+                    </tr>
+            
+                    <tr>
+                        <td rowspan="4"><b>Address</td>
+                        <td>Street</td>
+                        <td>Bandar Sierra</td>
+                    </tr>
+            
+                    <tr>
+                        <td>Town</td>
+                        <td>Menggatal</td>
+                    </tr>
+            
+                    <tr>
+                        <td>District</td>
+                        <td>Kota Kinabalu</td>
+                    </tr>
+            
+                    <tr>
+                        <td>State</td>
+                        <td>Sabah</td>
+                    </tr>
+            
+                    <tr>
+                        <td rowspan="3"><b>Contact</td>
+                        <td>Mobile Phone</td>
+                        <td>019-798 7156</td>
+                    </tr>
+            
+                    <tr>
+                        <td>Social Media</td>
+                        <td>@mg_hannn</td>
+                    </tr>
+            
+                    <t>
+                        <td>Website</td>
+                        <td>-</td>
+                    </tr>
+            
+                    <tr>
+                        <td><b>Course and Institution</td>
+                        <td colspan="2">Bachelor in Computer Science (Software Engineering)</td>
+                    </tr>
+            
+                    <tr>
+                        <td><b>Programming Skills</td>
+                        <td colspan="2">Good</td>
+                    </tr>
+            
+                    <tr>
+                        <td><b>Personal Interest</td>
+                        <td colspan="2">-</td>
+                    </tr>
+            
+                    <tr>
+                        <td><b>Future plan in 2025</td>
+                        <td colspan="2">Having the time of my life</td>
+                    </tr>
+            
+                    <tr>
+                        <td><b>Hobbies</td>
+                        <td colspan="2">Cleaning and learning new things</td>
+                    </tr>
+            
+                </table>
             </div>
         </div>
         <div class="footer">
-            &copy 2024 Ariffin
+            <ul>
+                <ul>Kota Kinabalu, Sabah.</ul>
+            </ul>
+            &copy 2024 Hana
         </div>
-
     </div>
-
-    <table border="1" style="width: 80%">
-        <tr bgcolor="#eac9f6">
-            <td><b>Name</b></td>
-            <td>
-                <center>Hana Mumtaz</center>
-            </td>
-            <td rowspan="4"><center>Photo<br><img src="C:\Users\user\Downloads\WhatsApp Image 2024-10-07 at 2.19.19 PM.jpeg" alt="My Photo" width="200px"></center></td>
-
-        <tr bgcolor="#eac9f6">
-            <td><b>Date of Birth</td>
-            <td>12/5/2003</td>
-        </tr>
-
-        <tr bgcolor="#eac9f6">
-            <td><b>Religion</td>
-            <td>Islam</td>
-        </tr>
-
-        <tr bgcolor="#eac9f6">
-            <td><b>Race</td>
-            <td>Bugis</td>
-        </tr>
-
-        <tr bgcolor="#eac9f6">
-            <td rowspan="4"><b>Address</td>
-            <td>Street</td>
-            <td>Bandar Sierra</td>
-        </tr>
-
-        <tr bgcolor="#eac9f6">
-            <td>Town</td>
-            <td>Menggatal</td>
-        </tr>
-
-        <tr bgcolor="#eac9f6">
-            <td>District</td>
-            <td>Kota Kinabalu</td>
-        </tr>
-
-        <tr bgcolor="#eac9f6">
-            <td>State</td>
-            <td>Sabah</td>
-        </tr>
-
-        <tr bgcolor="#eac9f6">
-            <td rowspan="3"><b>Contact</td>
-            <td>Mobile Phone</td>
-            <td>019-798 7156</td>
-        </tr>
-
-        <tr bgcolor="#eac9f6">
-            <td>Social Media</td>
-            <td>@mg_hannn</td>
-        </tr>
-
-        <tr bgcolor="#eac9f6">
-            <td>Website</td>
-            <td>-</td>
-        </tr>
-
-        <tr bgcolor="#eac9f6">
-            <td><b>Course and Institution</td>
-            <td colspan="2">Bachelor in Computer Science (Software Engineering)</td>
-        </tr>
-
-        <tr bgcolor="#eac9f6">
-            <td><b>Programming Skills</td>
-            <td colspan="2">Good</td>
-        </tr>
-
-        <tr bgcolor="#eac9f6">
-            <td><b>Personal Interest</td>
-            <td colspan="2">-</td>
-        </tr>
-
-        <tr bgcolor="#eac9f6">
-            <td><b>Future plan in 2025</td>
-            <td colspan="2">Having the time of my life</td>
-        </tr>
-
-        <tr bgcolor="#eac9f6">
-            <td><b>Hobbies</td>
-            <td colspan="2">Cleaning and learning new things</td>
-        </tr>
-
-    </table>
-
 </body>
-
 </html>
